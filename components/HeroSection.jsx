@@ -80,7 +80,7 @@ const HeroSection = () => {
 
           <div className="relative size-72 sm:size-80 rounded-full overflow-hidden ring-4 ring-white/10 shadow-2xl">
             <Image
-              src="/developer.png"
+              src="/Developer.png"
               alt="Tahmid — developer portrait"
               fill
               priority
