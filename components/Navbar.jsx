@@ -23,7 +23,7 @@ const navLinks = [
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   return (
-    <nav className="px-8 py-4 fixed top-0 left-0 right-0 z-50 bg-[#121212]/90">
+    <nav className="container mx-auto py-4 fixed top-0 left-0 right-0 z-50 bg-[#121212]/90">
       <div className="flex items-center justify-between">
         <Link href={"/"} className="text-lg font-semibold md:text-3xl">
           Khandoker Tahmid Sami

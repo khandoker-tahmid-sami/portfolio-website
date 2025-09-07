@@ -1,0 +1,37 @@
+export const myProjects = [
+  {
+    title: "Food Order Management",
+    description:
+      "A responsive and interactive food ordering dashboard built with React and Tailwind CSS. This project features real-time order creation, item selection, customer input, dynamic price calculation, and order status management (total, delete, deliver).",
+    image: "/food order management.png",
+    link: "https://github.com/khandoker-tahmid-sami/Food-Order-Management",
+  },
+  {
+    title: "Task Management App",
+    description:
+      "Task Management App — A simple and responsive task management tool built with React and Tailwind CSS. It allows users to add, edit, and prioritize tasks with tags and favorite options. Includes modal-based forms, state management, and clean UI/UX for productivity.",
+    image: "/task management app.png",
+    link: "https://github.com/khandoker-tahmid-sami/Task-Management-App",
+  },
+  {
+    title: "Cine Rental Movie App",
+    description:
+      "A responsive and interactive movie rental dashboard built with React and Tailwind CSS. This project lets users explore a movie catalog, view details in a modal, and add movies to a cart with toast notifications. It is built using a component-based architecture and supports light/dark themes.",
+    image: "/cine rental movie app.png",
+    link: "https://github.com/khandoker-tahmid-sami/Cine-Rental-Movie-App",
+  },
+  {
+    title: "Blogify",
+    description:
+      "A responsive and interactive movie rental dashboard built with React and Tailwind CSS. This project lets users explore a movie catalog, view details in a modal, and add movies to a cart with toast notifications. It is built using a component-based architecture and supports light/dark themes.",
+    image: "/Bbogify.png",
+    link: "https://github.com/khandoker-tahmid-sami/Blogify",
+  },
+  {
+    title: "Ecovista",
+    description:
+      "Ecovista is a dynamic and responsive weather dashboard application built with Next.js, Tailwind CSS, and the App Router architecture. It fetches real-time environmental data like air quality, temperature, wind speed, and current weather conditions based on the user's location or a selected city",
+    image: "/ecovista.png",
+    link: "https://github.com/khandoker-tahmid-sami/Ecovista",
+  },
+];
