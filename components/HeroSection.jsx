@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
-    <section className="container mx-auto px-4 py-16">
+    <section className="px-4 py-16">
       <div className="grid items-center gap-12 md:grid-cols-2">
         {/* myselg */}
         <div className="space-y-5">

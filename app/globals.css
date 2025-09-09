@@ -1,12 +1,10 @@
 @import "tailwindcss";
 
-
-
-
-
-
-
-
+@theme {
+  --breakpoint-bp320: 320px;
+  --breakpoint-xxs: 400px;
+  --breakpoint-xs: 480px; /* small phones / landscape phones */
+}
 
 /* @import "tw-animate-css";
 
