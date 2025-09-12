@@ -1,4 +1,4 @@
-import { Input } from "./ui/input";
+import ContactForm from "./ContactForm";
 const ContactSection = () => {
   return (
     <section className="max-w-3xl mx-auto">
@@ -10,6 +10,7 @@ const ContactSection = () => {
         to hear from you. Share a few details and I’ll get back within 24–48
         hours. Prefer email? Drop a line at{" "}
       </p>
+      <ContactForm />
     </section>
   );
 };
