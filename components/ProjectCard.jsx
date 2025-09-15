@@ -1,11 +1,11 @@
-import {Eye, Github } from "lucide-react";
+import { Eye, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const ProjectCard = ({ project }) => {
   return (
     <div
-      className="max-w-[850px] group overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-sm
+      className="mx-auto max-w-4xl group overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-sm
                  backdrop-blur-sm transition hover:border-indigo-500/30 hover:shadow-lg"
     >
       <div className="p-6">
