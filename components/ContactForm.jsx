@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
-const ContactForm = async() => {
+const ContactForm = () => {
   return (
     <div
       className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-sm
