@@ -2,15 +2,15 @@
 
 import nodemailer from "nodemailer";
 
-const email = process.env.NODEMAILER_EMAIL;
-const pass = process.env.NODEMAILER_APP_PASS;
-const to = process.env.NODEMAILER_CONTACT_TO;
+const EMAIL = process.env.NODEMAILER_EMAIL;
+const PASS = process.env.NODEMAILER_APP_PASS;
+const TO = process.env.NODEMAILER_CONTACT_TO;
 
 export const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: email,
-    pass: pass,
+    user: EMAIL,
+    pass: PASS,
   },
   //   from: email,
 });
@@ -24,5 +24,17 @@ export const sendMessage = async (formData) => {
     return null;
   }
 
-  await transporter.sendMail({});
+  await transporter.sendMail({
+     from: EMAIL,
+     to: TO,
+     text: message,
+     html: 
+     <>
+     <h2>New Message</h2>
+     <p>Name: ${name}</p>
+     <p>Email: ${email}</p>
+     <p>Message: ${message}</p>
+     </>
+     
+  });
 };

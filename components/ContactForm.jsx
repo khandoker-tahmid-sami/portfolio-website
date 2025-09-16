@@ -1,16 +1,15 @@
-"use client";
-
-import { Button } from "@/components/ui/button"; // <— fix: import Button from button
+import { sendMessage } from "@/app/actions/contact";
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
-const ContactForm = () => {
+const ContactForm = async() => {
   return (
     <div
       className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-sm
                  backdrop-blur-sm transition hover:border-indigo-500/30 hover:shadow-lg"
     >
-      <form className="p-6 md:p-8 space-y-5">
+      <form action={sendMessage} className="p-6 md:p-8 space-y-5">
         <div className="grid gap-4 md:grid-cols-2">
           <div className="grid gap-2">
             <label htmlFor="name" className="text-sm text-slate-300">
