@@ -9,15 +9,15 @@ import Navlink from "./Navlink";
 const navLinks = [
   {
     title: "About",
-    path: "/about",
+    path: "#about",
   },
   {
     title: "Projects",
-    path: "/projects",
+    path: "#projects",
   },
   {
     title: "Contact",
-    path: "/contact",
+    path: "#contact",
   },
 ];
 
@@ -26,7 +26,7 @@ export const brandA = DM_Serif_Display({ subsets: ["latin"], weight: ["400"] });
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   return (
-    <nav className="container mx-auto py-4 fixed top-0 left-0 right-0 z-50 bg-[#121212]/90">
+    <nav className="container mx-auto py-4 fixed top-0 left-0 right-0 z-50 bg-[#121212]/90 bp320: px-2">
       <div className="flex items-center justify-between">
         <Link
           href="/"
@@ -58,7 +58,12 @@ const Navbar = () => {
           {showMobileMenu ? <X /> : <Menu />}
         </button>
       </div>
-      {showMobileMenu && <MobileNavbar navlinks={navLinks} />}
+      {showMobileMenu && (
+        <MobileNavbar
+          navlinks={navLinks}
+          onNavigate={() => setShowMobileMenu(false)}
+        />
+      )}
     </nav>
   );
 };

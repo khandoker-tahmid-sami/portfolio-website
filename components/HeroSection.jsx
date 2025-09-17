@@ -1,4 +1,5 @@
 "use client";
+import { Download } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
@@ -47,24 +48,26 @@ const HeroSection = () => {
             out my latest projects and feel free to reach out.
           </p>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap lg:gap-3 items-center md:gap-2 bp320:gap-0.5">
             <Link
-              href="/projects"
-              className="rounded-full px-5 py-3  bg-white text-black font-medium hover:opacity-90 "
+              href="#projects"
+              className="rounded-full bg-white lg:px-5 lg:py-3 lg:text-sm md:px-4 md:py-2 bp320:text-[10px] bp320:px-2 bp320:py-2  border border-zinc-700 text-black font-medium hover:opacity-90"
             >
-              View Projects
+              view projects
             </Link>
             <Link
-              href="/contact"
-              className="rounded-full bg-white px-5 py-3 border border-zinc-700 text-black font-medium hover:opacity-90"
+              href="#contact"
+              className="rounded-full bg-white lg:px-5 lg:py-3 lg:text-sm md:px-4 md:py-2 bp320:text-[10px] bp320:px-2 bp320:py-2 border border-zinc-700 text-black font-medium hover:opacity-90"
             >
-              Contact Me
+              contact me
             </Link>
             <Link
-              href="/contact"
-              className="rounded-full bg-white px-5 py-3 border border-zinc-700 text-black font-medium hover:opacity-90"
+              href="/CV.pdf"
+              download
+              className="flex gap-1 items-center rounded-full bg-white lg:px-5 lg:py-3 lg:text-sm md:px-4 md:py-2 bp320:text-[10px] bp320:px-2 bp320:py-2 border border-zinc-700 text-black font-medium hover:opacity-90"
             >
-              Download CV
+              download resume
+              <Download className="w-4 h-4" />
             </Link>
           </div>
         </div>

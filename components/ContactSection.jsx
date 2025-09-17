@@ -2,7 +2,7 @@ import ContactForm from "./ContactForm";
 
 const ContactSection = () => {
   return (
-    <section className="mx-auto max-w-4xl px-4 py-16">
+    <section className="mx-auto max-w-4xl px-4 py-16" id="contact">
       <h4 className="text-center text-3xl md:text-4xl font-semibold tracking-tight">
         <span className="bg-gradient-to-r from-indigo-400 to-fuchsia-400 bg-clip-text text-transparent">
           Get in touch

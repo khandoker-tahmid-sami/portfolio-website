@@ -18,16 +18,18 @@ export async function sendMessage(formData) {
   const name = clean(formData.get("name")?.toString().trim() || "");
   const email = clean(formData.get("email")?.toString().trim() || "");
   const message = formData.get("message")?.toString().trim() || "";
+
   if (!name || !email || !message) return;
 
-  await transporter.sendMail({
-    from: EMAIL,
-    to: TO,
-    replyTo: email, // so you can hit Reply
-    subject: `New contact from ${name}`,
-    text: message,
-    // MUST be a STRING, not JSX
-    html: `
+  try {
+    await transporter.sendMail({
+      from: EMAIL,
+      to: TO,
+      replyTo: email, // so you can hit Reply
+      subject: `New contact from ${name}`,
+      text: message,
+      // MUST be a STRING, not JSX
+      html: `
       <h2>New Message</h2>
       <p><b>Name:</b> ${name}</p>
       <p><b>Email:</b> ${email}</p>
@@ -37,5 +39,11 @@ export async function sendMessage(formData) {
         .replace(/>/g, "&gt;")
         .replace(/\n/g, "<br/>")}</p>
     `,
-  });
+    });
+
+    return { ok: true };
+  } catch (err) {
+    console.error(err);
+    return { ok: false, error: "Failed to send email. Please try again." };
+  }
 }

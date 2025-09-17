@@ -17,7 +17,7 @@ const FooterSection = () => {
   return (
     <footer className={`mt-4 border-t-2 border-white/10 ${roboto.className}`}>
       <div className="mx-auto max-w-6xl px-4 py-8">
-        <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
+        <div className="flex flex-col items-center gap-6 xs: space-y-3 md:flex-row md:justify-between">
           {/* brand / copyright */}
           <p className="text-sm text-slate-400 text-center md:text-left">
             &copy; {new Date().getFullYear()}{" "}
@@ -40,7 +40,7 @@ const FooterSection = () => {
               <House className="h-5 w-5" />
               {/* label */}
               <span
-                className="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2
+                className="pointer-events-none absolute -top-10 left-1/2 -translate-x-1/2
                      rounded-md border border-white/15 bg-white/10 px-2 py-0.5
                      text-[11px] text-white opacity-0 translate-y-1
                      shadow-lg backdrop-blur-md whitespace-nowrap
@@ -58,13 +58,13 @@ const FooterSection = () => {
 
             {/* Projects (text) */}
             <Link
-              href="/projects"
+              href="#projects"
               className="group relative inline-flex items-center text-slate-300
                transition transform-gpu hover:-translate-y-1 hover:scale-110 hover:text-white"
             >
               <SquareChartGantt />
               <span
-                className="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2
+                className="pointer-events-none absolute -top-10 left-1/2 -translate-x-1/2
                      rounded-md border border-white/15 bg-white/10 px-2 py-0.5
                      text-[11px] text-white opacity-0 translate-y-1
                      shadow-lg backdrop-blur-md whitespace-nowrap
@@ -81,13 +81,13 @@ const FooterSection = () => {
 
             {/* Contact (text) */}
             <Link
-              href="/contact"
+              href="#contact"
               className="group relative inline-flex items-center text-slate-300
                transition transform-gpu hover:-translate-y-1 hover:scale-110 hover:text-white"
             >
               <Contact />
               <span
-                className="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2
+                className="pointer-events-none absolute -top-10 left-1/2 -translate-x-1/2
                      rounded-md border border-white/15 bg-white/10 px-2 py-0.5
                      text-[11px] text-white opacity-0 translate-y-1
                      shadow-lg backdrop-blur-md whitespace-nowrap
@@ -117,7 +117,7 @@ const FooterSection = () => {
             >
               <Github className="h-5 w-5" />
               <span
-                className="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2
+                className="pointer-events-none absolute -top-10 left-1/2 -translate-x-1/2
                      rounded-md border border-white/15 bg-white/10 px-2 py-0.5
                      text-[13px] text-white opacity-0 translate-y-1
                      shadow-lg backdrop-blur-md whitespace-nowrap
@@ -144,7 +144,7 @@ const FooterSection = () => {
             >
               <Linkedin className="h-5 w-5" />
               <span
-                className="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2
+                className="pointer-events-none absolute -top-10 left-1/2 -translate-x-1/2
                      rounded-md border border-white/15 bg-white/10 px-2 py-0.5
                      text-[13px] text-white opacity-0 translate-y-1
                      shadow-lg backdrop-blur-md whitespace-nowrap
