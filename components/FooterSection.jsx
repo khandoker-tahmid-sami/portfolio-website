@@ -16,7 +16,7 @@ const roboto = Roboto({
 const FooterSection = () => {
   return (
     <footer className={`mt-4 border-t-2 border-white/10 ${roboto.className}`}>
-      <div className="mx-auto max-w-6xl px-4 py-8">
+      <div className=" px-4 py-8">
         <div className="flex flex-col items-center gap-6 xs: space-y-3 md:flex-row md:justify-between">
           {/* brand / copyright */}
           <p className="text-sm text-slate-400 text-center md:text-left">

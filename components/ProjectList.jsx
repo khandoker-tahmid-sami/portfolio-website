@@ -1,21 +1,21 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { myProjects } from "@/data";
+import { myProjects } from "@/myProjects";
 import ProjectCard from "./ProjectCard";
 
 const ProjectList = () => {
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full">
       <Tabs
         defaultValue={myProjects?.[0]?.title}
-        className=" w-full max-w-5xl  mx-auto items-center"
+        className="w-full items-stretch"
       >
-        <TabsList className="bp320:mb-32 xxs:mb-22 xs:mb-10 sm:mb-10 md:mb-10 lg:mb-0 w-full flex gap-3 flex-wrap ">
+        <TabsList className="bp320:mb-32 xxs:mb-22 xs:mb-10 sm:mb-10 md:mb-10 lg:mb-0 w-full self-stretch flex gap-3 flex-wrap ">
           {myProjects.map((project, index) => (
             <TabsTrigger
               key={index}
               value={project.title}
-              className="
-                shrink-0 cursor-pointer px-6 py-4 rounded-lg
+              className="text-[20px]
+                shrink-0 cursor-pointer px-6 py-6 rounded-lg
                 text-white/80 hover:text-white
                 bg-transparent hover:bg-border-indigo-500/30
                 border border-white/20
@@ -34,7 +34,7 @@ const ProjectList = () => {
           <TabsContent
             key={project.title || idx}
             value={project.title}
-            className="mt-6"
+            className="mt-10 flex justify-center"
           >
             <ProjectCard project={project} />
           </TabsContent>
